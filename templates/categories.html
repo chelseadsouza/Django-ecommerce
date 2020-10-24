@@ -1,0 +1,282 @@
+{% extends 'base.html' %}
+{% load static %}
+     {% block body %}
+    <!-- Header Info End -->
+    <!-- Header End -->
+
+    <!-- Page Add Section Begin -->
+    <section class="page-add">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="page-breadcrumb">
+                        <h2>BEST DEALS!<span>.</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <img src="{% static 'img/add.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page Add Section End -->
+
+    <!-- Categories Page Section Begin -->
+ 
+            <!---Start--->
+            <section class="latest-products spad">
+        <div class="container">
+            <div class="product-filter">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title">
+                            <h2>Latest Products</h2>
+                        </div>
+                        <ul class="product-controls">
+                            <li data-filter="*">All</li>
+                            <li data-filter=".dresses">Dresses</li>
+                            <li data-filter=".bags">Bags</li>
+                            <li data-filter=".shoes">Shoes</li>
+                            <li data-filter=".accesories">Accesories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="product-list">
+                <div class="col-lg-3 col-sm-6 mix all accesories">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/acc1.jpg' %}" alt=""></a>
+                            <div class="p-status">new</div>
+                        </figure>
+                        <div class="product-text">
+                        <a href="{% url 'acc1' %}">
+                            <h6>Accessory 1</h6>
+                        </a>
+                            <p>₹700</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all accesories">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/acc2.jpg' %}" alt=""></a>
+                            <div class="p-status">new</div>
+                        </figure>
+                        <div class="product-text">
+                        <a href="{% url 'acc2' %}">
+                            <h6>Accessory 2</h6>
+                        </a>
+                            <p>₹800</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all accesories">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/acc3.jpg' %}" alt=""></a>
+                            <div class="p-status">new</div>
+                        </figure>
+                        <div class="product-text">
+                        <a href="{% url 'acc3' %}">
+                            <h6>Accessory 3</h6>
+                        </a>
+                            <p>₹999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all accesories">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/acc4.jpg' %}" alt=""></a>
+                            <div class="p-status">new</div>
+                        </figure>
+                        <div class="product-text">
+                        <a href="{% url 'acc4' %}">
+                            <h6>Accessory 4</h6>
+                        </a>
+                            <p>₹900</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all bags">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/bag1.jpg' %}" alt=""></a>
+                            <div class="p-status">new</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'bag1' %}">
+
+                            <h6>Bag 1</h6>
+                        </a>
+                            <p>₹2999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all bags">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/bag2.jpg' %}" alt=""></a>
+                            <div class="p-status sale">sale</div>
+                        </figure>
+                        <div class="product-text">
+                        <a href="{% url 'bag2' %}">
+
+                            <h6>Bag 2</h6>
+                        </a>
+                            <p>₹3999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all bags">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/bag3.jpg' %}" alt=""></a>
+                            <div class="p-status sale">sale</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'bag3' %}">
+
+                            <h6>Bag 3</h6>
+                        </a>
+                            <p>₹3999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all bags">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/bag4.jpg' %}" alt=""></a>
+                            <div class="p-status sale">sale</div>
+                        </figure>
+                        <div class="product-text">
+                        <a href="{% url 'bag4' %}">
+
+                            <h6>Bag 4</h6>
+                        </a>
+                            <p>₹3999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all shoes ">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/shoe1.jpg' %}" alt=""></a>
+                            <div class="p-status">new</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'shoe1' %}">
+                                <h6>Shoe 1</h6>
+                             </a>
+                            <p>₹1599</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all shoes">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/shoe2.jpg' %}" alt=""></a>
+                            <div class="p-status">new</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'shoe2' %}">
+                                <h6>Shoe 2</h6>
+                             </a>
+                            <p>₹1299</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all shoes">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/shoe3.jpg' %}" alt=""></a>
+                            <div class="p-status popular">popular</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'shoe3' %}">
+                                <h6>Shoe 3</h6>
+                             </a>
+                            <p>₹2999</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mix all shoes">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/shoe4.jpg' %}" alt=""></a>
+                            <div class="p-status">new</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'shoe4' %}">
+                                <h6>Shoe 4</h6>
+                            </a>    
+                            <p>₹1299</p>
+                        </div>
+                    </div>
+                </div>
+               
+                
+                <div class="col-lg-3 col-sm-6 mix all dresses">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/dress1.jpg' %}" alt=""></a>
+                            <div class="p-status popular">popular</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'dress1' %}">
+                                <h6>Dress 1</h6>
+                             </a>
+                            <p>₹1999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all dresses">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/dress.jpg' %}" alt=""></a>
+                            <div class="p-status popular">popular</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'dress2' %}">
+                                <h6>Dress 2</h6>
+                             </a>
+                            <p>₹1000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all dresses">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/dress3.jpg' %}" alt=""></a>
+                            <div class="p-status popular">popular</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'dress3' %}">
+                                <h6>Dress 3</h6>
+                             </a>
+                            <p>₹1999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mix all dresses">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/dress4.jpg' %}" alt=""></a>
+                            <div class="p-status popular">popular</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'dress4' %}">
+                                <h6>Dress 4</h6>
+                             </a>
+                            <p>₹1999</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Product End -->
+    <!-- Categories Page Section End -->
+    {% endblock %}

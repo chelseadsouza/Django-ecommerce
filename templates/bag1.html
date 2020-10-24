@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+     {% block body %}
+    <!-- Page Add Section Begin -->
+    <section class="page-add">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="page-breadcrumb">
+                        <h2>Product details<span>.</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <img src="{% static 'img/add.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page Add Section End -->
+
+    <!-- Product Page Section Beign -->
+    <section class="product-page">
+        <div class="container">
+            <div class="product-control">
+                <a href="#">Previous</a>
+                <a href="#">Next</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-slider owl-carousel">
+                        <div class="product-img">
+                            <figure>
+                                <img src="{% static 'img/products/bag1.jpg' %}" alt="">
+                                <div class="p-status">new</div>
+                            </figure>
+                        </div>
+                        <div class="product-img">
+                            <figure>
+                                <img src="{% static 'img/products/bag1.jpg' %}" alt="">
+                                <div class="p-status">new</div>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-content">
+                        <h2>Metallic Stiletto Heels</h2>
+                        <div class="pc-meta">
+                            <h5>₹2000</h5>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <p>Insole Material: PU</br>Outsole Material:   Rubber<br>Pattern Type:   Plain</br>Size Fit:   True To Size</br>Heels-Type: Court</br>Color:  Silver</br>Upper Material: Faux Leather</br>Heel Height:    High Heel</br>Toe:    Point Toe</br>Heels:  Stiletto</br>Style:  Business Casual</p>
+                        <ul class="tags">
+                            <li><span>Category :</span> Women's footwear</li>
+                            <li><span>Tags :</span> women, silver, golden details, elegant, classy</li>
+                        </ul>
+
+                        <a href="{% url 'checkout' %}" class="site-btn update-btn">BUY</a>
+
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Page Section End -->
+
+    <!-- Related Product Section Begin -->
+    <section class="related-product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Related Products</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/bag4.jpg' %}" alt=""></a>
+                            <div class="p-status sale">sale</div>
+                        </figure>
+                        <div class="product-text">
+                        <a href="{% url 'bag4' %}">
+
+                            <h6>Bag 4</h6>
+                        </a>
+                            <p>₹3999</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/bag3.jpg' %}" alt=""></a>
+                            <div class="p-status sale">sale</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'bag3' %}">
+
+                            <h6>Bag 3</h6>
+                        </a>
+                            <p>₹3999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/bag2.jpg' %}" alt=""></a>
+                            <div class="p-status sale">sale</div>
+                        </figure>
+                        <div class="product-text">
+                        <a href="{% url 'bag2' %}">
+
+                            <h6>Bag 2</h6>
+                        </a>
+                            <p>₹3999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/bag1.jpg' %}" alt=""></a>
+                            <div class="p-status">new</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'bag1' %}">
+
+                            <h6>Bag 1</h6>
+                        </a>
+                            <p>₹2999</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related Product Section End -->
+    {% endblock %}
+
+    

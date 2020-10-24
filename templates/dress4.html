@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+     {% block body %}
+    <!-- Page Add Section Begin -->
+    <section class="page-add">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="page-breadcrumb">
+                        <h2>Product details<span>.</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <img src="{% static 'img/add.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page Add Section End -->
+
+    <!-- Product Page Section Beign -->
+    <section class="product-page">
+        <div class="container">
+            <div class="product-control">
+                <a href="#">Previous</a>
+                <a href="#">Next</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-slider owl-carousel">
+                        <div class="product-img">
+                            <figure>
+                                <img src="{% static 'img/products/dress4.jpg' %}" alt="">
+                                <div class="p-status">new</div>
+                            </figure>
+                        </div>
+                        <div class="product-img">
+                            <figure>
+                                <img src="{% static 'img/products/dress4.jpg' %}" alt="">
+                                <div class="p-status">new</div>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-content">
+                        <h2>Lace Thigh Halter One Piece Dress</h2>
+                        <div class="pc-meta">
+                            <h5>₹1500</h5>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <p>Style:   Glamorous</br> Color:  Burgundy</br> Pattern Type:   Plain</br> Neckline:   Halter</br> Dresses Length: Maxi</br> Type:   A Line</br> Details:    Contrast Lace, Zipper, Split Thigh</br> Sleeve Length:  Sleeveless</br> Season: Summer</br> Composition:    100% Polyester</br> Material:   Polyester</br> Fabric: Non-stretch</br> Waist Line: High Waist</br> Hem Shaped: Slit</br> Fit Type:   Regular Fit</p>
+                        <ul class="tags">
+                            <li><span>Category :</span> Women's outfit</li>
+                            <li><span>Tags :</span> women, red, lace details, elegant, classy</li>
+                        </ul>
+                <a href="{% url 'checkout' %}" class="site-btn update-btn">BUY</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Page Section End -->
+
+    <!-- Related Product Section Begin -->
+    <section class="related-product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Related Products</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/dress4.jpg' %}" alt=""></a>
+                            <div class="p-status popular">popular</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'dress4' %}">
+                                <h6>Dress 4</h6>
+                             </a>
+                            <p>₹1999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-product-item">
+                                                <figure>
+                            <a href="#"><img src="{% static 'img/products/dress3.jpg' %}" alt=""></a>
+                            <div class="p-status popular">popular</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'dress3' %}">
+                                <h6>Dress 3</h6>
+                             </a>
+                            <p>₹1999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/dress.jpg' %}" alt=""></a>
+                            <div class="p-status popular">popular</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'dress2' %}">
+                                <h6>Dress 2</h6>
+                             </a>
+                            <p>₹1999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{% static 'img/products/dress1.jpg' %}" alt=""></a>
+                            <div class="p-status popular">popular</div>
+                        </figure>
+                        <div class="product-text">
+                            <a href="{% url 'dress1' %}">
+                                <h6>Dress 1</h6>
+                             </a>
+                            <p>₹1999</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related Product Section End -->
+    {% endblock %}
+
+    

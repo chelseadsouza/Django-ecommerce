@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+     {% block body %}
+
+    <!-- Page Add Section Begin -->
+    <section class="page-add">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="page-breadcrumb">
+                        <h2>REGISTER<span>.</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <img src="{% static 'img/add.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page Add Section End -->
+
+  
+
+
+
+    <!-- Cart Total Page Begin -->
+    
+                            <section class="cart-total-page spad">
+        <div class="container">
+            <form action="/signup/" class="checkout-form" method="POST">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>Your Information</h3>
+                    </div>
+                    {{form}}
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="payment-method">
+                                <br/>
+                                <button type="submit"><h4>SIGN IN</h4></button>
+                            </br>
+                        </br>
+                                <h5>THANK YOU FOR Registering!</h5>
+    
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Cart Total Page End -->
+        {% endblock %}
